@@ -1,0 +1,135 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+html{
+    font-size: clamp(14px, 1vw, 18px);
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #1c120c, #98121b);
+    color:white;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: clamp(15px, 3vw, 30px);
+    position: relative;
+    z-index: 10;
+}
+
+.nav-left { 
+    position: absolute;
+    left: 65px;
+}
+
+.nav-left a {
+    display: inline-block;
+    text-decoration:none;
+    color: white;
+    margin-right: 40px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    opacity: 0.7;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.nav-left a:hover { 
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.nav-right {
+    opacity: 0.7;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.nav-right:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.tag {
+    background: rgba(255, 255, 255, 0.9);
+    color:#111;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: 'Sedgwick Ave Display', sans-serif;
+}
+
+
+.wanglin-img {
+    position: absolute;
+    bottom: 0px;
+    /* */ 
+    left: 50%;
+    width: clamp(200px, 50vw, 600px);
+    animation: floatScale 4s ease-in-out infinite;
+    z-index: 12;
+}
+
+@keyframes floatScale {
+    0%{
+        transform: translatex (-50%) scale (1) translateY (0);
+    }
+    50% {
+        transform: translatex (-50%) scale (1.05) translateY (-50px);
+    }
+    100% {
+        transform: translatex (-50%) scale (1) translateY (0)
+    }
+}
+
+
+table {
+    Width: 50%;
+    border-radius: 8px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+th,
+td {
+    Padding: 6px 6px;
+    text-align: Center;
+    border-bottom: 1px solid #6c0303;
+}
+
+th {
+    background-color: #691111;
+    color: #ffff;
+}
+
+tr {
+    background-color: linear-gradient(100deg, #960e15, #2e080a);
+}
+
+tr:hover {
+    background-color: #7a0606;
+    
+}
+
+main {
+    font-family: 'poppins', sans-serif;
+    Position: relative;
+    left: 10px;
+    color: #fff3f3
+}
+main {
+    position: relative;
+    left: 10px;
+
+}
+
+
